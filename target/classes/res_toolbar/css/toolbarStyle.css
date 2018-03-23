@@ -1,0 +1,97 @@
+.background {
+    -fx-background-color: #ffffff;
+    -fx-opacity: 0.9;
+    -fx-border-color: #dae4e3;
+}
+
+.menu-bar {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: black;
+    -fx-opacity: 0.9;
+}
+
+.cita-ver {
+
+	-fx-graphic: url("../img/agenda.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;;
+}
+
+.cita-nuevo {
+
+	-fx-graphic: url("../img/add.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;;
+}
+
+.cita-editar {
+
+	-fx-graphic: url("../img/modificar.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.cita-venta {
+
+	-fx-graphic: url("../img/venta.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.cita-compra {
+
+	-fx-graphic: url("../img/compra.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.cita-lista-venta {
+
+	-fx-graphic: url("../img/lista_venta.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.cita-lista-venta {
+
+	-fx-graphic: url("../img/lista_compra.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.cita-lista-venta {
+
+	-fx-graphic: url("../img/lista_productos.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.cita-lista-venta {
+
+	-fx-graphic: url("../img/lista_receta.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.cita-stats-venta {
+
+	-fx-graphic: url("../img/stats_venta.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.cita-stats-compra {
+
+	-fx-graphic: url("../img/stats_compra.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.cita-stats-ganancia {
+
+	-fx-graphic: url("../img/stats_ganancia.png");
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
