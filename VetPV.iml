@@ -90,5 +90,21 @@
     <orderEntry type="library" name="Maven: xalan:xalan:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: com.ibm.icu:icu4j:2.6.1" level="project" />
     <orderEntry type="library" name="Maven: asm:asm:3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jfxtras:jfxtras-all:8.0-r6-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jfxtras:jfxtras-agenda:8.0-r6-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jfxtras:jfxtras-common:8.0-r6-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jfxtras:jfxtras-controls:8.0-r6-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jfxtras:jfxtras-fxml:8.0-r6-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jfxtras:jfxtras-font-roboto:8.0-r6-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jfxtras:jfxtras-gauge-linear:8.0-r6-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jfxtras:jfxtras-icalendaragenda:8.0-r6-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jfxtras:jfxtras-icalendarfx:8.0-r6-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jfxtras:jfxtras-menu:8.0-r6-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.calendarfx:view:8.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.calendarfx:recurrence:8.4.2" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.controlsfx:controlsfx:8.40.13" level="project" />
+    <orderEntry type="library" name="Maven: de.jensd:fontawesomefx-commons:8.13" level="project" />
+    <orderEntry type="library" name="Maven: de.jensd:fontawesomefx-fontawesome:4.7.0-1" level="project" />
   </component>
 </module>

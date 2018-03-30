@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jfxtras:jfxtras-font-roboto:8.0-r6-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jfxtras/jfxtras-font-roboto/8.0-r6-SNAPSHOT/jfxtras-font-roboto-8.0-r6-20180318.081114-656.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jfxtras/jfxtras-font-roboto/8.0-r6-SNAPSHOT/jfxtras-font-roboto-8.0-r6-20180318.081114-656-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jfxtras/jfxtras-font-roboto/8.0-r6-SNAPSHOT/jfxtras-font-roboto-8.0-r6-20180318.081114-656-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

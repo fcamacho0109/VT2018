@@ -1,7 +1,7 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 .background {
-    -fx-background-color: #1d1d1d;
-    -fx-opacity: 0.9;
+    -fx-background-color: #CFCFCF;
+    -fx-opacity: 1;
     -fx-border-color: #dae4e3;
 }
 .back_groundError {
@@ -145,7 +145,7 @@
 }
 .Image_background_log_back {
 
-	-fx-background-image: url("../img/login_background.jpg"); 
+	-fx-background-image: url("../img/croquetos.jpg");
     -fx-opacity: 1;
 	-fx-background-repeat: stretch;   
 	-fx-background-size: 750 600;

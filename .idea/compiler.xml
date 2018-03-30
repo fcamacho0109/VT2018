@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="FlockTails" />
+        <module name="VetPV" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="FlockTails" target="1.8" />
+      <module name="VetPV" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

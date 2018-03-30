@@ -1,5 +1,6 @@
 package module;
 
+import Core.Session;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,9 +12,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/res_main/MainScreen.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Croquetos");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
+        Session.getInstance().initializaSession(primaryStage);
     }
 
 

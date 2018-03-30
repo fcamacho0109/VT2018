@@ -30,7 +30,7 @@ public class Database extends Thread {
             e.printStackTrace();
         }
     }
-    public Database() throws SQLException , ClassNotFoundException {
+    public Database() {
         run();
     }
     /**
@@ -51,7 +51,7 @@ public class Database extends Thread {
         }
         System.out.println(rol);
         String query = "select * from user where username = ? and pass = ? and role = ?";
-        ps = (PreparedStatement) conObj.prepareStatement(query);
+        ps = conObj.prepareStatement(query);
         ps.setString(1,user);
         ps.setString(2,pass);
         ps.setInt(3, rol);
