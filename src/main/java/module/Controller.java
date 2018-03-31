@@ -1,5 +1,6 @@
 package module;
 
+import Core.Database;
 import Core.Session;
 import Core.User;
 import com.calendarfx.model.Calendar;
@@ -68,7 +69,7 @@ public class Controller implements Initializable {
 
 
 
-        if (!(user.equals("croquetos") && pass.equals("admin"))) {
+        if (!(user.equals("") && pass.equals("")) ) {
             userLoginText.setText("");
             userLoginPass.setText("");
             //userLoginText.setPromptText("Minimo 8 caracteres");
@@ -99,14 +100,25 @@ public class Controller implements Initializable {
 
             CalendarView calendarView = new CalendarView();
 
-            Calendar citas_doctor = new Calendar("Citas doctor");
-            Calendar citas_estética = new Calendar("Citas estética");
+            //Calendar citas_doctor = new Calendar("Citas doctor");
+            //Calendar citas_estética = new Calendar("Citas estética");
+
+
+
+            /*Entry<?> consulta = new Entry<>();
+            consulta.setId("1");
+            consulta.setTitle("Consulta de doc");
+            consulta.setFullDay(false);
+
+            consulta.setInterval(start,end);
+            consulta.setLocation("Detalleees");
+            citas_doctor.addEntry(consulta);
 
             citas_doctor.setStyle(Calendar.Style.STYLE2);
             citas_estética.setStyle(Calendar.Style.STYLE1);
-
+*/
             CalendarSource myCalendarSource = new CalendarSource("Croquetos");
-            myCalendarSource.getCalendars().addAll(citas_doctor, citas_estética);
+            myCalendarSource.getCalendars().setAll(Session.getInstance().getCalendars());
             //calendarView.getCalendarSources().setAll(myCalendarSource);
 
             calendarView.setShowAddCalendarButton(false);
@@ -118,8 +130,6 @@ public class Controller implements Initializable {
             calendarView.setShowPrintButton(false);
 
             myEntryFactory factory = new myEntryFactory();
-
-
             calendarView.setEntryFactory(lambda -> factory.newEntry());
 
 
@@ -143,11 +153,11 @@ public class Controller implements Initializable {
 
                             Set<Entry<?>> list = getAllEntries(calendarView,intervalo.getInterval());
                             list.forEach( l -> {
-                                System.out.print(l.getStartDate() + " ");
-                                System.out.print(l.getStartTime() + " - ");
-                                System.out.print(l.getEndTime() + " \n");
-                                System.out.println(l.getProperties());
                                 if(l.intersects(intervalo)) {
+                                    System.out.print(l.getStartDate() + " ");
+                                    System.out.print(l.getStartTime() + " - ");
+                                    System.out.print(l.getEndTime() + " \n");
+                                    System.out.println(l.getProperties());
 
                                     //System.out.print(intervalo + "\n");
 
@@ -173,10 +183,10 @@ public class Controller implements Initializable {
                                     }
 
 
+                                    System.out.println("---------------------------");
                                 }
 
                             });
-                            System.out.println("---------------------------");
                         });
 
                         try {
@@ -207,7 +217,10 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        loginBtn.requestFocus();
+        Database.getInstance();
+        Database.getInstance().getCalendarios();
+        Database.getInstance().getEventos();
+
         /*comboType.setItems(FXCollections.observableArrayList(
                 User.Rol.Admin,
                 User.Rol.Usuario,
