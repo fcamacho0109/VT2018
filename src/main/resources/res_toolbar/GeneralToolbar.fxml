@@ -36,7 +36,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button fx:id="boton_ver_cita" contentDisplay="TOP" layoutX="295.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="93.0" styleClass="menu-bar" stylesheets="@css/toolbarStyle.css" text="Citas">
+                              <Button fx:id="boton_ver_cita" onAction="#showAgenda" contentDisplay="TOP" layoutX="295.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="93.0" styleClass="menu-bar" stylesheets="@css/toolbarStyle.css" text="Citas">
                                  <graphic>
                                     <ImageView fitHeight="67.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -179,7 +179,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button fx:id="boton_lista_productos" contentDisplay="TOP" layoutX="295.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="93.0" styleClass="menu-bar" stylesheets="@css/toolbarStyle.css" text="Lista">
+                              <Button fx:id="boton_lista_productos" onAction="#listaProductos" contentDisplay="TOP" layoutX="295.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="93.0" styleClass="menu-bar" stylesheets="@css/toolbarStyle.css" text="Lista">
                                  <graphic>
                                     <ImageView fitHeight="67.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
                                        <image>

@@ -4,6 +4,8 @@ import com.calendarfx.model.Calendar;
 import com.calendarfx.model.Entry;
 import javafx.stage.Stage;
 import module.App.App;
+import module.calendario.MyCalendar;
+import module.searchTable.SearchTable;
 
 import java.util.ArrayList;
 
@@ -11,6 +13,17 @@ public class Session {
 
     private User user;
     private App app;
+    private MyCalendar myCalendar;
+    private SearchTable searchTable;
+
+    public SearchTable getSearchTable() {
+        return searchTable;
+    }
+
+    public void setSearchTable(SearchTable searchTable) {
+        this.searchTable = searchTable;
+    }
+
     private ArrayList<Calendar> calendars;
     private ArrayList<Entry<?>> events;
 
@@ -52,6 +65,13 @@ public class Session {
         return app;
     }
 
+    public MyCalendar getMyCalendar() {
+        return myCalendar;
+    }
+
+    public void setMyCalendar(MyCalendar myCalendar) {
+        this.myCalendar = myCalendar;
+    }
 
     public void setApp(App app) {
         this.app = app;

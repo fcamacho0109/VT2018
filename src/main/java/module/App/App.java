@@ -21,6 +21,7 @@ public class App {
     }
 
     public void setPane(Node node){
+
         controller.setPane(node);
     }
 

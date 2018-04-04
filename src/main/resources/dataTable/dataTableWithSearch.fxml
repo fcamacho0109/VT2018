@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module.searchTable.SearchTable">
+   <children>
+      <HBox alignment="TOP_RIGHT" maxHeight="25.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" minHeight="30.0" minWidth="200.0" text="Filtrar" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="inputText" maxWidth="350.0" minHeight="30.0" minWidth="300.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <TableView fx:id="table" editable="true" maxHeight="1.7976931348623157E308" minHeight="720.0" VBox.vgrow="ALWAYS">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Column X" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</VBox>

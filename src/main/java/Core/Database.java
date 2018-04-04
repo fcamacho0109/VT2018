@@ -1,5 +1,6 @@
 package Core;
 
+import Core.models.Producto;
 import com.calendarfx.model.Calendar;
 import com.calendarfx.model.Entry;
 
@@ -98,6 +99,32 @@ public class Database {
         }
         Session.getInstance().setCalendars(calendarios);
         return calendarios;
+    }
+    public ArrayList<Producto> getProductos(){
+        ArrayList<Producto> productos   = new ArrayList<>();
+        String query = "Select * from productos;";
+        try{
+            ps = conObj.prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()){
+                Producto producto = new Producto();
+                producto.setId(rs.getInt(1));
+                producto.setName(rs.getString(2));
+                producto.setDescription(rs.getString(3));
+                producto.setPrice(rs.getFloat(4));
+                producto.setPrice_sale(rs.getFloat(5));
+                producto.setCode(rs.getString(6));
+                producto.setStock(rs.getInt(7));
+                productos.add(producto);
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        //Session.getInstance().setEvents(eventos);
+        System.out.println(productos.size());
+        return productos;
     }
 }
 
